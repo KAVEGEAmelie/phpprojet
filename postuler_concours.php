@@ -273,7 +273,7 @@ ini_set('display_errors', 1);
             alert('Une erreur s\'est produite lors de l\'envoi des données au serveur. Veuillez réessayer.');
         });
     });
- 
+    console.log
 </script>
 
 </body>

@@ -1,25 +1,25 @@
 <?php
-// Inclure le fichier de configuration de la base de données
+
 include("../config.php");
 
-// Démarrer la session
+
 session_start();
 
-// Vérifier si l'administrateur est déjà connecté
+
 if (isset($_SESSION['admin_authenticated'])) {
     header("Location: ../ADMIN/dashboard.php");
     exit();
 }
 
-// Vérifier les informations de connexion lorsque le formulaire est soumis
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Paramètres de connexion à la base de données
+    
     $servername = "localhost";
     $db_username = "root";
     $db_password = "";
     $dbname = "iai_togo_db";
 
-    // Création de la connexion
+    
     $conn = new mysqli($servername, $db_username, $db_password, $dbname);
 
     // Vérification de la connexion
@@ -55,10 +55,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error_message = "Nom d'utilisateur incorrect";
     }
 
-    // Fermer la déclaration préparée
+    
     $stmt->close();
 
-    // Fermer la connexion à la base de données
+
     $conn->close();
 }
 ?>

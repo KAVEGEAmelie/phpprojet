@@ -223,6 +223,8 @@ include 'process_registration_util.php';
                 if (data.success) {
                     // Succès
                     messageContainer.innerHTML = '<div class="success-message">' + data.message + '</div>';
+                    window.location.href = 'login.php';
+
                 } else {
                     // Échec
                     messageContainer.innerHTML = '<div class="error-message">' + data.message + '</div>';

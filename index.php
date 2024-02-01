@@ -1,7 +1,6 @@
 <?php
 include 'config.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,50 +21,44 @@ include 'config.php';
             min-height: 100vh; 
         }
 
-        /* En-tête avec le logo, le titre et les liens */
         #header {
-            background-color: transparent; /* Couleur de fond transparente */
-            border-bottom: 2px solid #ccc; /* Bordure en bas */
+            background-color: transparent;
+            border-bottom: 2px solid #ccc;
             padding: 5px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        /* Logo de l'école */
         #logo {
-            width: 80px; /* Ajustez la taille du logo selon vos besoins */
+            width: 80px; 
         }
 
-        /* Titre de la page */
+       
         #title {
-            color: #fff; /* Couleur du texte pour le titre dans la bande */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre textuelle */
+            color: #fff; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             font-size: 40px; 
         }
 
-        /* Liens vers d'autres pages */
         #links {
             display: flex;
         }
 
-        /* Styles des liens */
         #links a {
-            color: #007bff; /* Couleur des boutons */
+            color: #007bff;
             text-decoration: none;
-            margin-right: 15px; /* Espace entre les liens */
-            transition: color 0.3s ease; /* Transition de couleur pour le survol */
-            font-size: 20px; /* Taille du texte */
-            font-weight: bold; /* Texte en gras */
+            margin-right: 15px; 
+            transition: color 0.3s ease; 
+            font-size: 20px; 
+            font-weight: bold; 
         }
 
-        /* Styles des liens au survol */
         #links a:hover {
-            color: #0056b3; /* Couleur plus foncée au survol */
+            color: #0056b3; 
             text-decoration: underline;
         }
 
-        /* Informations sur le concours */
         #info {
             position: absolute;
             top: 50%;
@@ -75,35 +68,30 @@ include 'config.php';
             color: #fff;
         }
 
-        /* Style du texte à l'intérieur des informations */
         #info span {
-            color: #007bff; /* Couleur des boutons */
-            font-weight: bold; /* Texte en gras */
+            color: #007bff; 
+            font-weight: bold; 
         }
 
-        /* Conteneur pour les boutons de lien */
         .btn-container {
             position: absolute;
-            bottom: 60px; /* Réduction de l'espace en bas du bouton container */
+            bottom: 60px; 
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
         }
 
-        /* Styles des boutons */
         .btn {
             margin: 0 10px;
-            border-radius: 15px; /* Bords plus arrondis */
-            transition: background-color 0.3s ease, color 0.3s ease; /* Transitions pour le survol */
+            border-radius: 15px;
+            transition: background-color 0.3s ease, color 0.3s ease; 
         }
 
-        /* Styles des boutons au survol */
         .btn:hover {
-            background-color: #0056b3; /* Couleur de fond plus foncée au survol */
-            color: #fff; /* Couleur du texte plus claire au survol */
+            background-color: #0056b3;
+            color: #fff;
         }
 
-        /* Pied de page */
         #footer {
             background-color: #333;
             color: white;
@@ -116,7 +104,6 @@ include 'config.php';
     </style>
 </head>
 <body>
-    <!-- Bande en haut avec logo, titre, et liens -->
     <div id="header">
        
         <img src="img/lo.jpg" alt="IAI-TOGO Logo" id="logo">
@@ -127,32 +114,23 @@ include 'config.php';
         </div>
     </div>
 
-    <!-- Informations sur le concours -->
     <div id="info">
-        <!-- Message de bienvenue avec un span stylisé -->
         <h2>Bienvenue au concours <span>IAI-TOGO!</span> Nous sommes ravis de vous accueillir dans cette compétition exceptionnelle. Découvrez vos opportunités, défiez-vous et faites partie de l'excellence. Bonne chance!</h2>
     </div>
 
-    <!-- Boutons de lien vers d'autres pages -->
     <div class="btn-container">
-        <!-- Bouton pour créer un compte -->
         <a href="register.php" class="btn btn-info">Créer un compte</a>
-        <!-- Bouton pour se connecter -->
         <a href="login.php" class="btn btn-primary">Se connecter</a>
     </div>
 
-    <!-- Pied de page -->
     <div id="footer">
-        <!-- Texte de droits d'auteur -->
         <p>&copy; 2024 IAI-TOGO. Tous droits réservés.</p>
     </div>
 
-    <!-- Inclusion des scripts Bootstrap et jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Script pour changer l'image de fond à intervalles réguliers -->
     <script>
         // Tableau contenant les chemins des images de fond
         var backgroundImages = ["img/l1.JPG", "img/l2.JPG", "img/l3.JPG"];

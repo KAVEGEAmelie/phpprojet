@@ -1,19 +1,21 @@
 <?php
-// Paramètres de connexion à la base de données
-$servername = "localhost";  
-$username = "root";  
+
+$servername = "localhost";
+$username = "root";
 $password = "";
 $dbname = "iai_togo_db";
 
-// Création de la connexion
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Vérification de la connexion
+
 if ($conn->connect_error) {
     die("La connexion à la base de données a échoué : " . $conn->connect_error);
 }
 
-// Nom d'utilisateur et mot de passe à insérer
+
+/*
+// Nom d'utilisateur et mot de passe à insérer (à faire une seule fois)
 $nom_utilisateur = 'admin';
 $mot_de_passe = 'mot_de_passe_admin';
 
@@ -30,7 +32,10 @@ $stmt->execute();
 
 // Fermeture de la déclaration préparée
 $stmt->close();
+*/
 
-// Fermeture de la connexion à la base de données
-$conn->close();
+// Vous pouvez laisser le reste de votre code ici...
+
+// Ne fermez pas la connexion à la base de données ici si vous comptez utiliser la connexion dans d'autres fichiers.
+// $conn->close();
 ?>
